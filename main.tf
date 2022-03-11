@@ -12,17 +12,17 @@ terraform {
   required_version = "~> 1.0"
 
   backend "remote" {
-    organization = "REPLACE_ME"
+    organization = "ANPRO-Terraform"
 
     workspaces {
-      name = "REPLACE_ME"
+      name = "demo-github-actions"
     }
   }
 }
 
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-1"
 }
 
 
